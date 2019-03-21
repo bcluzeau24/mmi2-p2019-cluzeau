@@ -7,5 +7,5 @@ var waypoint = new Waypoint({
   handler: function(direction) {
     document.getElementById('retention').classList.add('is-reached');
   },
-  offset:'50%'
+  offset:'70%'
 });
