@@ -12,7 +12,7 @@ html{
 
 body{
 	height:100%;
-	background:linear-gradient(black, #000f56);
+	background:linear-gradient(black,black);
 }
 
 /*intro.scss*/
@@ -24,13 +24,17 @@ body{
 	flex-direction:column;
 	justify-content: center;
 	background: linear-gradient(black, black);
+
+	@media (min-width: 440px) {
+		height:auto;
+	}
 }
 
 .intro__title{
 	color:white;
 	font-size: 2.2em;
 	text-align: center;
-	margin-top:5vh ; 
+	margin-top:8vh ; 
 	font-family:"Space";
 }
 
@@ -62,6 +66,7 @@ body{
 	color:white;
 	font-family:"Nasa";
 	margin:10px;
+	font-size: 0.8em;
 }
 
 
