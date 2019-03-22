@@ -60,11 +60,7 @@ body{
 	text-align: center;
 	opacity:0;
 	transform: translateX(-100%);
-	transition:transform 3s;
-}
-.is-reached{
-	opacity:1;
-	transform:none;
+	transition:transform 2s;
 }
 .retention__future{
 	color:white;
@@ -75,4 +71,11 @@ body{
 .retention__boot{
 	height: auto;
 	max-width:100%;
+	opacity:0;
+	transform:translateX(-20%) translateY(-20%) scale(0.1);
+	transition:transform 1.5s;
+}
+.is-reached{
+	opacity:1;
+	transform:none;
 }
