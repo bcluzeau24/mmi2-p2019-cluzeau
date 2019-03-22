@@ -69,13 +69,58 @@ body{
 	font-size: 0.8em;
 }
 .retention__boot{
-	height: auto;
+	height: 40vh;
 	max-width:100%;
 	opacity:0;
 	transform:translateX(-20%) translateY(-20%) scale(0.1);
 	transition:transform 1.5s;
+	@media (min-width: 450px) {
+		height:auto;
+	}
 }
 .is-reached{
 	opacity:1;
 	transform:none;
+}
+
+/*parallax.scss*/
+
+.parallax{
+	height: 30vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: url(./../img/nike-hyperadapt-back-parallax.jpg);
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-position: center;
+	background-size: 120vh;
+	box-shadow:inset 0px 0px 20px 12px black;
+}
+.parallax__name{
+	color:white;
+	font-family: "Space";
+	font-size: 4vh;
+}
+
+/*lacing.scss*/
+
+.lacing{
+	height:auto;
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	text-align: center;
+	background: black;
+}
+.lacing__boot{
+	height: auto;
+	max-width:100%;
+	transform:translateX(-20%) ;
+	filter:grayscale(40%) contrast(160%);
+}
+.lacing__explication{
+	color:white;
+	font-family:"Nasa";
+	font-size: 0.8em;
 }
