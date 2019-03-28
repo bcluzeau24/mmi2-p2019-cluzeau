@@ -106,20 +106,22 @@ body{
 	text-align: center;
 	background: black;
 	margin:10vh 10px 10px 10px;
-	opacity:0;
-	transform:scale(0.1);
-	transition:transform 2s;
-}
-.lacing__boot{
-	height: auto;
-	max-width:100%;
-	transform:translateX(-20%) ;
-	filter:grayscale(40%) contrast(160%);
 }
 .lacing__explication{
 	color:white;
 	font-family:"Nasa";
 	font-size: 0.8em;
+	opacity:0;
+	transform:scale(0.1);
+	transition:transform 2s;
+}
+.lacing__image{
+	width:100vw;
+	height:50vh;
+	margin-top: 5vh;
+	background-image:url(./../img/nike-hyperadapt-bluelagoon.jpg);
+	background-size:45em;
+	background-position:center;
 }
 .is-reached{
 	opacity:1;

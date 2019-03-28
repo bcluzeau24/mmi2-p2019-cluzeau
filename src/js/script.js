@@ -19,9 +19,9 @@ var waypoint2 = new Waypoint({
 });
 
 var waypoint1 = new Waypoint({
-  element: document.getElementById('lacing'),
+  element: document.getElementById('lacing__explication'),
   handler: function(direction) {
-    document.getElementById('lacing').classList.add('is-reached');
+    document.getElementById('lacing__explication').classList.add('is-reached');
   },
   offset:'100%'
 });
