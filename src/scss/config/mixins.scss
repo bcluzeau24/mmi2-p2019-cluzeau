@@ -1,0 +1,9 @@
+@mixin text {
+	color:white;
+	font-family:"Nasa";
+	font-size: 2vh;
+	line-height: 2.3vh;
+	@media (min-width: 700px) {
+		font-size:2.5vh;
+	}
+}

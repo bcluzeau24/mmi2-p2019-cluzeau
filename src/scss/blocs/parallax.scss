@@ -1,0 +1,25 @@
+/*parallax.scss*/
+
+.parallax{
+	height: 30vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: url(./../img/nike-hyperadapt-back-parallax.jpg);
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-position: center;
+	background-size: 120vh;
+	box-shadow:inset 0px 0px 20px 12px black;
+	@media (min-width: 530px) {
+		background-size:180vh;
+	}
+}
+.parallax__name{
+	color:white;
+	font-family: "Space";
+	font-size: 3.2vh;
+	@media (min-width: 550px) {
+		font-size:4.5vh;
+	}
+}

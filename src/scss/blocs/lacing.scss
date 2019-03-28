@@ -1,0 +1,49 @@
+/*lacing.scss*/
+
+.lacing{
+	height:auto;
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	text-align: center;
+	background: black;
+	margin:10vh 1vh 1vh 1vh;
+}
+.lacing__explication{
+	@include text;
+	opacity:0;
+	transform:scale(0.1);
+	transition:transform 2s;
+}
+.lacing__image{
+	width:100vw;
+	height:50vh;
+	margin-top: 5vh;
+	background-image:url(./../img/nike-hyperadapt-bluelagoon.jpg);
+	background-size:45em;
+	background-position:center;
+	background-repeat: no-repeat;
+	@media (min-width: 450px) {
+		background-size:60em;
+	}
+	@media (min-width: 600px) {
+		background-size:70em;
+	}
+}
+.lacing__feelings{
+	@include text;
+	margin-top:4vh;
+	width:100vw;
+	opacity:0;
+	transform:rotateX(-360deg);
+	transition:transform 3s ease-out;
+}
+.lacing__technologies{
+	@include text;
+	margin-top:4vh;
+	width:100vw;
+	opacity:0;
+	transform:rotateX(360deg);
+	transition:transform 3s;
+}
