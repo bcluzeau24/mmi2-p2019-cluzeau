@@ -17,3 +17,11 @@ var waypoint2 = new Waypoint({
   },
   offset:'70%'
 });
+
+var waypoint1 = new Waypoint({
+  element: document.getElementById('lacing'),
+  handler: function(direction) {
+    document.getElementById('lacing').classList.add('is-reached');
+  },
+  offset:'100%'
+});
