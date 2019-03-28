@@ -145,14 +145,13 @@ body{
 	transition:transform 3s;
 }
 
-.is-reached{
-	opacity:1;
-	transition: 2s;
-	transform:none;
-}
-
 /*advantages.scss*/
 
+.advantages{
+	opacity:0;
+	transform:scale(0.1);
+	transition:transform 2s;
+}
 .advantages__title{
 	color:white;
 	font-size: 1.3em;
@@ -166,4 +165,25 @@ body{
 .list__infos{
 	@include text;
 	margin:2vh;
+}
+.is-reached{
+	opacity:1;
+	transition: 2s;
+	transform:none;
+}
+
+/*footer.scss*/
+
+.footer{
+	height: 20vh;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	text-align:center;
+	background: linear-gradient(black,white);
+}
+.footer__rights{
+	@include text;
+	width:100vw;
+	text-shadow: 14px 12px black;
 }
