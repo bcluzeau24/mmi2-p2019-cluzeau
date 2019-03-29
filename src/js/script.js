@@ -39,7 +39,7 @@ var waypoint = new Waypoint({
   handler: function(direction) {
     document.getElementById('lacing__technologies').classList.add('is-reached');
   },
-  offset:'45%'
+  offset:'50%'
 });
 
 var waypoint = new Waypoint({

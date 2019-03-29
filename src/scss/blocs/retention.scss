@@ -17,6 +17,9 @@
 .retention__future{
 	@include text;
 	margin:3vh;
+	@media (min-width: 900px) {
+		width:50vw;
+	}
 }
 .retention__boot{
 	height: 40vh;
@@ -26,5 +29,10 @@
 	transition:transform 1.5s;
 	@media (min-width: 450px) {
 		height:auto;
+	}
+	
+	@media (min-width: 900px) {
+		order:-1;
+		min-width:40vw;
 	}
 }
